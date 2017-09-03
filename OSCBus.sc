@@ -12,7 +12,7 @@ OSCBus{
 
 	*new{ |cmdName, nchan, addr, server|
 		OSCBus.updateWarning;
-		^super.new.init(cmdName, nchan, addr, server);
+		^super.new.init(addr, cmdName, nchan, server);
 	}
 
 	init{ |addr, cmdName, nchan, s|
